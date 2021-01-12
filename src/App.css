@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 7vmin;
   pointer-events: none;
 }
 
@@ -15,9 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +33,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+.movies {
+  max-width: 100vw !important;
+  flex-flow: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .movies {
+    display: inline-block;
+  }
+}
+.movie {
+  width: 230px;
+  margin: 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.movie-title {
+  font-size: 1.2em;
+  font-variant: petite-caps;
+  font-weight: bold;
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search-button {
+  background: transparent;
+  border: none;
+}
+.search-button:hover {
+  color: #4f0eff;
+}
+.search-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
